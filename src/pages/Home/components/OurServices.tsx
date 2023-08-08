@@ -129,6 +129,7 @@ const OurServices = () => {
                             className="
                                 text-3xl
                                 font-semibold
+                                text-center
                             "
                         >
                             {service.title}
