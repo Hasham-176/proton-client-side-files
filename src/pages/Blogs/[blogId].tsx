@@ -80,7 +80,6 @@ const BlogPage = () => {
         '
       >
         <Helmet>
-          <title>{blog.title}</title>
           <meta name="description" content={blog.shortDesc} />
           {/* conical */}
           <link rel="canonical" href={`https://www.protontechnologies.com.pk/blogs/${blogId}`} />
@@ -104,6 +103,7 @@ const BlogPage = () => {
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow, max-snippet: -1" />
           <meta name="bingbot" content="index, follow, max-snippet: -1 " />
+          <title>{blog.title}</title>
         </Helmet>
         <img
           src={blog.image}

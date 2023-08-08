@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import CreateBlog from "./pages/Blogs/CreateBlog";
 import EditBlogPage from "./pages/Blogs/[editBlogId]";
 import Blogs from "./pages/Blogs/Blogs";
+import NotFound from "./pages/NotFound/NotFound";
 
 const colors = ["#03045e", "#00b4d8", "#d90429", "#ffb703", "#fb8500", "#80ed99", "#a5a58d"];
 const numBalls = 60;
@@ -123,8 +124,8 @@ const App = () => {
 
   return (
     <>
+      <div className="min-h-screen flex flex-col justify-between">
       <Header />
-      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/admin/dashboard" element={<Dashboard />} />
@@ -134,9 +135,10 @@ const App = () => {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:blogId" element={<BlogPage />} />
           <Route path="/admin/dashboard/edit-blog/:editBlogId" element={<EditBlogPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
       <Footer />
+      </div>
     </>
   );
 };

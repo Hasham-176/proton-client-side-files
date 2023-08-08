@@ -52,7 +52,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <div>
     <footer
       className="
             bg-black/30
@@ -284,7 +284,7 @@ const Footer = () => {
       >
         Copyright © 2023 PROTON TECHNOLOGIES
       </div>
-    </>
+    </div>
   );
 };
 
