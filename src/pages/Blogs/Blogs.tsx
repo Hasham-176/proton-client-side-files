@@ -19,7 +19,7 @@ const Blogs = () => {
         setLoading(true);
         const fetchBlogs = async () => {
           try {
-            const response = await axios.get("final-server-files.vercel.app/api/blogs");
+            const response = await axios.get("https://final-server-files.vercel.app/api/blogs/");
             const data = response.data;
             return data;
           } catch (error) {
