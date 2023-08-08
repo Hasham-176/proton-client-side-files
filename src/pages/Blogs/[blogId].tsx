@@ -102,8 +102,8 @@ const BlogPage = () => {
           {/* robots */}
           <meta name="robots" content="index, follow" />
           <meta name="googlebot" content="index, follow, max-snippet: -1" />
-          <meta name="bingbot" content="index, follow, max-snippet: -1 " />
           <title>{blog.title}</title>
+          <meta name="bingbot" content="index, follow, max-snippet: -1 " />
         </Helmet>
         <img
           src={blog.image}
