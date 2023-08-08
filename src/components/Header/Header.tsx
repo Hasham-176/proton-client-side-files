@@ -144,11 +144,11 @@ const Header = () => {
                     className={`
                         uppercase
                         text-white
-                        text-lg
+                        text-[0.9rem]
                         transition-all
                         duration-300
                         cursor-pointer
-                        ${index === 6 ? 'bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white' : 'hover:text-primary-1'}
+                        ${index === 6 ? 'bg-blue-500 hover:bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white' : 'hover:text-primary-1'}
                     `}
                     href={section.id}
                     onClick={(e) => handleMenuClick(e, section.id)}
@@ -165,7 +165,11 @@ const Header = () => {
                         transition-all
                         duration-300
                         cursor-pointer
-                        bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white
+                        bg-blue-500
+                        hover:bg-primary-1 
+                        px-4 
+                        py-2 
+                        rounded-full hover:tracking-widest ease-in  text-white
                     `}
                     to={'admin/dashboard/create-blog'}
                 >
@@ -174,11 +178,12 @@ const Header = () => {
                 <button
                     className={`
                         uppercase
-                        text-lg
+                        text-[0.9rem]
                         transition-all
                         duration-300
                         cursor-pointer
-                        bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white
+                        bg-blue-500
+                        hover:bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white
                         border-none
                     `}
                     onClick={handleLogout}
@@ -213,12 +218,12 @@ const Header = () => {
                     key={section.id}
                     className={`
                         uppercase
-                        text-lg
+                        text-[0.9rem]
                         transition-all
                         duration-300
                         cursor-pointer
                         max-w-fit
-                        ${index === 6 ? 'bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white' : 'hover:text-primary-1 hover:tracking-widest'}
+                        ${index === 6 ? 'bg-blue-500 hover:bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white' : 'hover:text-primary-1 hover:tracking-widest'}
                     `}
                     href={section.id}
                     onClick={(e) => handleMenuClick(e, section.id)}
@@ -231,11 +236,12 @@ const Header = () => {
                 <Link
                     className={`
                         uppercase
-                        text-lg
+                        text-[0.9rem]
                         transition-all
                         duration-300
                         cursor-pointer
-                        bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white
+                        bg-blue-500
+                        hover:bg-primary-1 px-4 py-2 rounded-full hover:tracking-widest ease-in  text-white
                         max-w-fit
                     `}
                     to={'admin/dashboard/create-blog'}
@@ -245,7 +251,7 @@ const Header = () => {
                 <button
                     className={`
                         uppercase
-                        text-lg
+                        text-[0.9rem]
                         transition-all
                         duration-300
                         cursor-pointer

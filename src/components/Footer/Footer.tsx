@@ -1,6 +1,9 @@
 import { BsFacebook } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import { HiLocationMarker } from "react-icons/hi";
+import { AiFillPhone } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 import { useLayoutEffect } from "react"
@@ -54,7 +57,7 @@ const Footer = () => {
       className="
             bg-black/30
             px-6
-            py-8
+            py-12
             xl:px-0
         "
     >
@@ -68,6 +71,7 @@ const Footer = () => {
             sm:grid-cols-2
             lg:grid-cols-4
             gap-y-8
+            gap-x-8
         "
       >
         <div
@@ -92,34 +96,55 @@ const Footer = () => {
                     text-white
                 "
           >
-            <div className="font-semibold text-lg">Address</div>
+            <div className="font-semibold text-lg">Contact Us</div>
             <div
               className="
-                        font-medium
-                        text-base
-                    "
+                flex
+                flex-col
+                gap-3
+                xl:whitespace-nowrap
+              "
             >
-              Kashif Center, Sharah-e-Faisal, Karachi.
+              <div
+                className="
+                          font-medium
+                          text-base
+                          flex
+                          items-start
+                          gap-2
+                      "
+              >
+                <div className="pt-1"><HiLocationMarker /></div>
+                Kashif Center, Sharah-e-Faisal, Karachi.
+              </div>
+              <div
+                className="
+                          font-medium
+                          text-base
+                          flex
+                          items-start
+                          gap-2
+                      "
+              >
+                <div className="pt-1"><MdEmail /></div>
+                info@protontechnologies.com.pk
+              </div>
+              <div
+                className="
+                          font-medium
+                          text-base
+                          flex
+                          items-start
+                          gap-2
+                      "
+              >
+                <div className="pt-1"><AiFillPhone /></div>
+                +92 312 3346777
+              </div>
             </div>
           </div>
-          <div
-            className="
-                    flex
-                    flex-col
-                    gap-6
-                    text-white
-                "
-          >
-            <div className="font-semibold text-lg">Email</div>
-            <div
-              className="
-                        font-medium
-                        text-base
-                    "
-            >
-              info@protontechnologies.com.pk
-            </div>
-          </div>
+            
+          
         </div>
         <div
           className="
@@ -135,12 +160,12 @@ const Footer = () => {
                     font-semibold
                 "
           >
-            Navigation
+            Quick Links
           </div>
           <div
             className="
-                    flex
-                    flex-col
+                    grid
+                    grid-cols-2
                     gap-3
                 "
           >

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { formatDate } from '../../utils/formatDate';
@@ -78,12 +79,39 @@ const BlogPage = () => {
           h-[468px]
         '
       >
+        <Helmet>
+          <title>{blog.title}</title>
+          <meta name="description" content={blog.shortDesc} />
+          {/* conical */}
+          <link rel="canonical" href={`https://www.protontechnologies.com.pk/blogs/${blogId}`} />
+          {/* tags */}
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={blog.title} />
+          <meta property="og:description" content={blog.shortDesc} />
+          <meta property="og:url" content={`https://www.protontechnologies.com.pk/blogs/${blogId}`} />
+          <meta property="og:image" content={blog.image} />
+          <meta property="og:image:width" content="880" />
+          <meta property="og:image:height" content="660" />
+          <meta property="og:locale" content="en_US" />
+          {/* twitter */}
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta name='twitter:site' content={`https://www.protontechnologies.com.pk/blogs/${blogId}`}/>
+          <meta name="twitter:creator" content="@ProtonTechnologies"/>
+          <meta name="twitter:title" content={blog.title}/>
+          <meta name="twitter:description" content={blog.shortDesc}/>
+          <meta name="twitter:image" content={blog.image} />
+          {/* robots */}
+          <meta name="robots" content="index, follow" />
+          <meta name="googlebot" content="index, follow, max-snippet: -1" />
+          <meta name="bingbot" content="index, follow, max-snippet: -1 " />
+        </Helmet>
         <img
           src={blog.image}
           alt={blog.title}
           className='
             w-full
             h-full
+            object-cover
             rounded-2xl
           '
         />

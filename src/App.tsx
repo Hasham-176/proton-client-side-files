@@ -60,13 +60,13 @@ const App = () => {
 
         if (window.innerHeight <= 790) {
           if (viewportWidth <= 640) {
-            ball.style.top = `${Math.floor(Math.random() * 1400)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 1230)}%`;
           } else if (viewportWidth <= 768) {
-            ball.style.top = `${Math.floor(Math.random() * 1280)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 1050)}%`;
           } else if (viewportWidth <= 1024) {
-            ball.style.top = `${Math.floor(Math.random() * 1000)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 850)}%`;
           } else {
-            ball.style.top = `${Math.floor(Math.random() * 760)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 700)}%`;
           }
         } else {
           if (viewportWidth <= 640) {
@@ -74,9 +74,9 @@ const App = () => {
           } else if (viewportWidth <= 768) {
             ball.style.top = `${Math.floor(Math.random() * 720)}%`;
           } else if (viewportWidth <= 1024) {
-            ball.style.top = `${Math.floor(Math.random() * 640)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 530)}%`;
           } else {
-            ball.style.top = `${Math.floor(Math.random() * 400)}%`;
+            ball.style.top = `${Math.floor(Math.random() * 500)}%`;
           }
         }
         

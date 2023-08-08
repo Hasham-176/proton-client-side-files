@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async';
 
 import "./styles.css";
 
@@ -8,7 +9,8 @@ const PrivacyPolicy = () => {
         className='
             flex
             flex-col
-            min-h-screen
+            max-w-screen-xl
+            mx-auto
             w-full
             px-6
             xl:px-0
@@ -17,6 +19,10 @@ const PrivacyPolicy = () => {
             text-white
         '
     >
+        <Helmet>
+            <title>Privacy Policy</title>
+            <meta name='description' content='Our privacy policy'/>
+        </Helmet>
         <h1>
         Privacy Policy
         </h1>

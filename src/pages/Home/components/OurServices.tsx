@@ -112,7 +112,7 @@ const OurServices = () => {
                             h-full
                             transition-all
                             duration-500
-                            hover:scale-110
+                            hover:scale-105
                         `}
                         key={service.title}
                     >
