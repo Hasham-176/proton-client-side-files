@@ -46,7 +46,7 @@ const CreateBlog = () => {
                 }))
                 console.log(fields);
 
-                const response = await axios.post("https://final-server-files.vercel.app/api/blogs/", {
+                const response = await axios.post("https://final-server-files.vercel.app/api/blogs", {
                     title: fields.title,
                     image: fields.image,
                     shortDesc: fields.shortDesc,
