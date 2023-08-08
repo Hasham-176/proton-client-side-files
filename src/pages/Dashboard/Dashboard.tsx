@@ -161,7 +161,7 @@ const Dashboard = () => {
                 </Tr>
               </Thead>
               <Tbody>
-                { {blogs.map((blog: Blog) => (
+                {blogs.map((blog: Blog) => (
                   <Tr key={blog._id}>
                     <Td>
                       <Link to={`/blogs/${blog._id}`}>
@@ -234,7 +234,7 @@ const Dashboard = () => {
                         </div>
                     </Td>
                   </Tr>
-                ))} }
+                ))}
               </Tbody>
             </Table>
           </TableContainer>
