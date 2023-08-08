@@ -53,7 +53,7 @@ const Dashboard = () => {
     setLoading(true);
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("final-server-files.vercel.app/api/blogs");
+        const response = await axios.get("https://final-server-files.vercel.app/api/blogs");
         const data = response.data;
         return data;
       } catch (error) {
@@ -161,7 +161,7 @@ const Dashboard = () => {
                 </Tr>
               </Thead>
               <Tbody>
-                {/* {blogs.map((blog: Blog) => (
+                { {blogs.map((blog: Blog) => (
                   <Tr key={blog._id}>
                     <Td>
                       <Link to={`/blogs/${blog._id}`}>
@@ -234,7 +234,7 @@ const Dashboard = () => {
                         </div>
                     </Td>
                   </Tr>
-                ))} */}
+                ))} }
               </Tbody>
             </Table>
           </TableContainer>
